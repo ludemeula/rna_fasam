@@ -1,7 +1,7 @@
-#RNA - Redes Neurais Artificiais
+# RNA - Redes Neurais Artificiais
 
 Repositório que contém as atividades realizanas na disciplina de RNA da Turma III de Big Data e Machine Learning da FASAM - Faculdade Sul Americana.
 
-Conteúdo:
+### Conteúdo
 
-Algoritmo de implementação da função Perceptron.
+* Algoritmo de implementação da função Perceptron.
