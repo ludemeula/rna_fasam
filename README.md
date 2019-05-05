@@ -4,4 +4,4 @@ Repositório que contém as atividades realizanas na disciplina de RNA da Turma 
 
 ### Conteúdo
 
-* Algoritmo de implementação da função Perceptron.
+* Algoritmo de implementação da função Perceptron;
