@@ -20,17 +20,11 @@ def funcao_ativacao(u):
   return 1 if u > 0 else -1
 
 def saida(entradas, pesos, bias):
-
   u = 0
-
   for i in range(len(entradas)):
     u = u + entradas[i] * pesos[i]
 
   return u + bias
-
-def peso(x, w, alpha):
-  for i in range(len(w)):
-    w[i] = w[i] + e[i] * alpha * x[i]
 
 def soma(erros):
   soma = 0
@@ -38,6 +32,9 @@ def soma(erros):
     if erro != 0:
       soma = soma + 1
   return soma
+
+def bias(b, alpha, e):
+  return b + alpha * e
 
 #max_it -> número de iteraçoes
 #E -> vetor de erros
@@ -56,11 +53,11 @@ def perceptron(max_it, E, alpha, X, d):
       e.append(d[i] - y)
       for index in range(len(w)):
         w[index] = w[index] + e[i] * alpha * X[i][index]
-      b = b + alpha * e[i]
+      b = bias(b, alpha, e[i])
 
     E = soma(e)
     t = t + 1
-  return (w, b)
+  return (w, b)  
 
 X = [[1,1], [1,0], [0,1], [0,0]]
 d = [1, -1, -1, -1]
